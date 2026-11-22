@@ -145,13 +145,13 @@ export function urlIconoCampeon(
   nombre: string | null
 ): string | null {
 
-  if (!nombre) {
+  if (!version || !nombre) {
     return null;
   }
 
   return (
-    `https://cdn.communitydragon.org/latest/champion/` +
-    `${idCampeonDataDragon(nombre)}/square`
+    `${URL_DATA_DRAGON}/cdn/${version}/img/champion/` +
+    `${idCampeonDataDragon(nombre)}.png`
   );
 
 }
