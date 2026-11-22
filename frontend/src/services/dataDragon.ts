@@ -141,7 +141,7 @@ function idCampeonDataDragon(
 
 
 export function urlIconoCampeon(
-  version: string | null,
+  _version: string | null,
   nombre: string | null
 ): string | null {
 
