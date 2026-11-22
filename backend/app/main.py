@@ -16,18 +16,6 @@ from backend.app.services.analisis_service import (
     analizar_jugador_con_referencia,
 )
 
-allow_origins=[
-
-  "http://localhost:5173",
-
-  "http://127.0.0.1:5173",
-
-  "https://rift-lens-eta.vercel.app",
-
-  "https://riftlensnuevo.vercel.app",
-
-],
-
 # ============================================================
 # REGIONES SOPORTADAS
 # ============================================================
