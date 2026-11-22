@@ -1,6 +1,11 @@
+import re
+import requests
+
+from fastapi.responses import Response
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+
 
 from backend.app.services.riot_service import (
     PartidaRemakeException,
@@ -86,6 +91,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://riftlensnuevo.vercel.app",
         "https://rift-lens-eta.vercel.app",
     ],
     allow_credentials=True,
